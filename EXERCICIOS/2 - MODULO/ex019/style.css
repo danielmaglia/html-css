@@ -1,0 +1,18 @@
+@charset "UTF-8";
+body {
+    background-color: #f7eec6;
+    font: normal 15px Arial, sans-serif;
+}
+h1 {
+    color: #4e461b;
+}
+#prin {
+    color: rgb(0, 0, 0);
+    text-align: center ;
+}
+h2 {
+    color: #80753f;
+}
+p {
+    text-align: justify;
+}

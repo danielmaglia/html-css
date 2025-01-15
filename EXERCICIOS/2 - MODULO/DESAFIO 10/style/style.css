@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/* Importar fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@font-face {
+    font-family: Android;
+    src: url(../fontes/idroid.otf) format('opentype');
+}
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+:root {
+    --cor0: #e8ffc2;
+    --cor1: #83e1ad;
+    --cor2: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+    --cor6: #c4fdde;
+
+    --fonte-padrao: 'Segoe UI', Arial, Verdana, sans-serif;
+    --fonte-destaque: "Bebas Neue", serif;
+    --fonte-droid: 'Android', serif;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-image: linear-gradient( var(--cor3), var(--cor5) );
+    padding: 25px 15px 15px 15px;
+    font-family: var(--fonte-destaque);
+}
+header > h1 {
+    font-weight: normal;
+}
+header > p {
+    font: normal 1em var(--fonte-padrao);
+    padding: 0px 15px 10px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+}
+
+nav {
+    background-color: var(--cor5);
+    text-align: center;
+    padding: 0px 20px 10px;
+    box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.377);
+ }
+nav > a {
+    padding: 10px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    background-color: var(--cor4);
+    color: var(--cor2);
+    transition-duration: 0.5s;
+}
+main {
+    text-align: justify;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 0px 0px 12px 12px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);
+}
+
+article > h1{
+    color: var(--cor5) ;
+    font-family: var(--fonte-droid);
+    padding: 0px 0px 5px 0px;
+    font-size: 1.9em;
+}
+/*Só o que está em <P> */
+p > strong {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+p > a {
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+p a:hover {
+    text-decoration: underline;
+    color: var(--cor5);
+}
+
+a.externo::after {
+    content: '\1F517';
+}
+
+h2 {
+    font-family: var(--fonte-droid);
+    color: var(--cor4);
+    font-size: 1.5em;
+    margin-left: 7px;
+
+}
+
+/*Ele pode estar em qlqr lugar do Main*/
+main p {
+    margin: 12px 0px;
+    text-indent: 25px;
+    line-height: 1.7em;
+}
+main img {
+    width: 100%;
+}
+
+article .img-peq {
+    max-width: 350px;
+    margin: auto;
+    display: block;
+}
+
+/* Macete Para deixar um vídeo dinâmico */
+div.video {
+    background-color: var(--cor5);
+    padding: 15px;
+    margin: 0px -20px 30px -20px;
+    position: relative;
+    padding-bottom: 57%;
+}
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    height: 90%;
+    width: 90%;
+}
+/*---------------------------------------*/
+aside {
+    background-color: var(--cor6) ;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+}
+aside > h3 {
+    background-color: var(--cor4);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    margin: -10px -10px 0px -10px;
+}
+aside > ul {
+    list-style-type: '\2714\00A0' ;
+    list-style-position: inside;
+    columns: 2;
+    line-height: 25px;
+}
+
+
+footer {
+    background-color: var(--cor5);
+    color: white;
+    font-size: 1em;
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    font-weight: bold;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+/*Thanks Jesus <3/*

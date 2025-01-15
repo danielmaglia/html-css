@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando</title>
+    <style>
+        body {
+            background-color: rgb(42, 149, 227);
+            font: normal 16px arial, verdana, sans-serif;
+            color: black;
+        }
+        #principal {
+            color: #ffffff;
+            background-color: #006411;
+        }
+        .paragraf{
+            text-align: justify;
+        }
+        #sub{
+            color: #000000;
+        }
+        .link {
+            text-decoration: none;
+            font-weight: bold;
+            color: darkred;
+        }
+        .link:hover {
+            text-decoration: underline;
+            color: darkmagenta;
+        }
+
+        .link::after{ content:'>';}
+        .link::before{content: '<';}
+    </style>
+</head>
+<body>
+    <h1 id="principal">Texto Principal</h1>
+    <p class="paragraf"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Provident vel nostrum itaque veritatis deserunt odit ducimus omnis reiciendis ex. Voluptates aperiam magnam error itaque quaerat ad modi temporibus molestias ea? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae, quam. Laudantium minima reprehenderit quos, ratione recusandae optio magni ipsum praesentium, officiis quae deserunt repellendus laborum error delectus neque! Rem, dolores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum numquam inventore omnis beatae aliquam! Voluptate, ea dolores totam delectus laudantium aut voluptatem! Repellat, enim saepe aut eveniet minima perspiciatis officia.</p>
+    <h2 id="sub">Acesse nosso Youtube</h2>
+    <ul>
+        <li><a class="link" href="https://www.youtube.com/" target="_blank"> Youtube</a></li>
+    </ul>
+</body>
+</html>

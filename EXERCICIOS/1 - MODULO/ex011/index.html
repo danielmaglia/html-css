@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em hmtl5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Podemos abrir um site em vários dispositivos ou simplemente aumentar ou diminuir a Imagens</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem G">
+    </picture>
+  
+    <h1>Audio em Html5</h1>
+    <p>Podemos acessar os aúdios</p>
+    <audio preload="metadata" controls>
+        <source src="media/Anderson Freire O Dono da Seara.mp3" type="audio/mpeg">
+    </audio>
+
+    <h1>Vídeos em HTML5</h1>
+    <h2>Hospedados Localmente</h2>
+    <p>Video hospedado dentro do próprio site</p>
+    <video width="1000" poster="video/face/capa.jpeg" controls preload="metadata">
+        <source src="video/Trailer oficial do canal _ O Incrível Mundo de Gumball _ Cartoon Network.mp4" type="video/mp4">
+        <source src="video/Trailer oficial do canal _ O Incrível Mundo de Gumball _ Cartoon Network.mkv" type="video/webm">
+        <p>Não foi possivel carregar o video</p>
+    </video>
+
+    <h1>Vídeo de Servidor Externo</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/gqrySQQzvvQ?si=B0N0InXbiSJGe9OW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
